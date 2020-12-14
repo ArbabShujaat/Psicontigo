@@ -81,6 +81,7 @@ class _InAppWebViewExampleScreenState extends State<InAppWebViewExampleScreen> {
           Expanded(
             child: Stack(children: [
               Container(
+                color: Colors.black,
                 child: InAppWebView(
                     contextMenu: contextMenu,
                     //Ameer der motivated a dlta add ka link
@@ -154,7 +155,7 @@ class _InAppWebViewExampleScreenState extends State<InAppWebViewExampleScreen> {
                   ? Container()
                   : Center(
                       child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                      valueColor: AlwaysStoppedAnimation<Color>(Colors.red),
                     )),
             ]),
           ),
